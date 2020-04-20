@@ -3,10 +3,10 @@ import React from 'react';
 
 const Employee=(props)=>{
     return  <div>
-                <form onSubmit={props.Emp}>
-              Id:&nbsp;<input type='number' value={props.currentId} onChange={props.updateId}></input>&nbsp;
-                 Name:&nbsp; <input type='text' value={props.currentName} onChange={props.updateName}></input><br/><br/>
-                    <button type="submit">EmpModule</button>
+                <form onSubmit={props.addEmp}>
+                    Employee Id:&nbsp;<input type='number' value={props.currentEmpId} onChange={props.updateEmpId}></input>&nbsp;
+                    Employee Name:&nbsp; <input type='text' value={props.currentEmpName} onChange={props.updateEmpName}></input><br/><br/>
+                    <button type="submit">Add Employee</button>
                 </form>
             </div>
 }
